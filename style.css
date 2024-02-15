@@ -1,8 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  outline: 1px solid gray;
+}
+body {
+  /*  fall back  */
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
+    "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  /*  Inter Font  */
+  font-family: "Inter", sans-serif;
+  font-size: 1.25;
+}
+
+.cherry-cream soda-regular {
+  font-family: "Cherry Cream Soda", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main h1 {
+  font-family: "Cherry Cream Soda", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+main p li {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300em;
+  font-style: normal;
+}
+
 main { 
-    display: grid; 
+    
+
+  display: grid; 
     grid-template-columns: repeat(2, 1fr);
 
-    background-color: aquamarine;
+    background-color: #78B0A0;
 
     article {
       padding: 2em;
@@ -18,4 +58,4 @@ main {
     height: 100vh;
     object-fit: cover;
   }
-  }
+}
