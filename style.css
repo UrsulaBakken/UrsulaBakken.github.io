@@ -22,11 +22,17 @@ body {
 }
 
 
-main h1 {
+main article h1 {
   font-family: "Cherry Cream Soda", system-ui;
   font-weight: 400;
   font-style: normal;
+}
 
+main p ol {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 
