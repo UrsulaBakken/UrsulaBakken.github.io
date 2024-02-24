@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'));
 
 * {
   outline: 1px solid gray;
@@ -15,24 +16,23 @@ body {
   font-size: 1.25;
 }
 
-.cherry-cream soda-regular {
-  font-family: "Cherry Cream Soda", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 main article h1 {
   font-family: "Cherry Cream Soda", system-ui;
   font-weight: 400;
   font-style: normal;
+  
+  animation: slideDown;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
 }
 
-main p ol {
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+
+main p {
+  animation: slideDown;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
 }
 
 
@@ -45,11 +45,16 @@ main {
     background-color: #78B0A0;
 
     article {
-      padding: 2em;
       display: flex;
+      padding: 2em;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      align-items: center;}
+    }
+
+    ol li{
+      display: inline-block;
+    }
 
     img {
       display: block;
@@ -57,5 +62,79 @@ main {
     
     height: 100vh;
     object-fit: cover;
+
+    animation: slideDown;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+
+  main { 
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+ }
+  
+ main h1 {
+   text-align: center;
+   font-size: 1.5rem;
+ }
+ 
+ aside img{
+   display: block;
+   max-height: 50%;
+   width: 100%;
+   
+ }
+ 
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown{
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+}
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+/* Media Queries */
+@media screen and ( max-width: 700px ) {
+  
+  main { 
+     grid-template-columns: repeat(1, 1fr);
+     justify-content: center;
+  }
+   
+  main h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  main img{
+    display: block;
+    
+    max-height: 50%;
+    width: 100%;
+  }
+  
+  aside nav {
+    display: flex;
+    flex-direction: column;
   }
 }
