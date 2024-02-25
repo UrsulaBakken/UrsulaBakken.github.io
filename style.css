@@ -21,6 +21,7 @@ main article h1 {
   font-weight: 400;
   font-style: normal;
   
+  
   animation: slideDown;
   animation-duration: 1s;
   animation-delay: 2s;
