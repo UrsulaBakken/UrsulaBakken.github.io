@@ -45,7 +45,7 @@ main {
   display: grid; 
     grid-template-columns: repeat(2, 1fr);
 
-    background-color: #587850;
+    background-color: #78B0A0;
 
     article {
       display: flex;
@@ -63,7 +63,7 @@ main {
       display: block;
     max-width: 100%;
     
-    height: 100vh;
+    height: auto;
     object-fit: cover;
 
     animation: slideDown;
@@ -71,6 +71,8 @@ main {
   animation-delay: 1s;
   animation-fill-mode: both;
 
+  align-items: center;
+      justify-content: center;
   }
 }
 
@@ -87,12 +89,6 @@ main {
    font-size: 1.5rem;
  }
  
- aside img{
-   display: block;
-   max-height: 50%;
-   width: 100%;
-   
- }
  
 }
 
@@ -117,7 +113,7 @@ main {
 }
 }
 /* Media Queries */
-@media screen and ( max-width: 700px ) {
+@media screen and ( max-width: 900px ) {
   
   main { 
      grid-template-columns: repeat(1, 1fr);
@@ -132,7 +128,7 @@ main {
   main img{
     display: block;
     
-    max-height: 50%;
+    height: 100%;
     width: 100%;
   }
   
