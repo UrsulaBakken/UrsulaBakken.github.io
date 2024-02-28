@@ -16,7 +16,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 1.25;
 }
-
+/* move this down */
 main article h1 {
   font-family: "Cherry Cream Soda", system-ui;
   font-weight: 400;
@@ -45,8 +45,9 @@ main p {
   animation-fill-mode: both;
 
   color: whitesmoke;
-}
 
+}
+/* all of this  */
 
 main { 
     
