@@ -109,7 +109,7 @@ main {
 
   nav a:active{
      animation: shrink;
-     animation-duration: 0s;
+     animation-duration: .01s;
      animation-fill-mode: both;
 
   }
@@ -147,11 +147,9 @@ main {
 0%{
   scale: 1;
 }
-50%{
-  scale: .80;
-}
+
 100%{
-  scale: 1;
+  scale: .80;
 }
 }
 
