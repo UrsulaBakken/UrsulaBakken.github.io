@@ -2,9 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-* {
+/* * {
   outline: 1px solid gray;
-}
+} */
 
 body {
   /*  fall back  */
@@ -44,7 +44,7 @@ main p {
   animation-delay: .75s;
   animation-fill-mode: both;
 
-  color: whitesmoke;
+  color: #FEFBF3;
 
 }
 /* all of this  */
@@ -67,6 +67,8 @@ main {
 
     ol li{
       display: inline-block;
+
+      margin: 2em;
     }
 
     img {
